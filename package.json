@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "cheerio": "0.22.0",
+    "fs": "0.0.1-security",
     "gh-pages": "^2.2.0",
     "gulp": "^4.0.2",
     "gulp-shell": "^0.8.0",

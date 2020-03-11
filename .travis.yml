@@ -1,5 +1,4 @@
 languaje: node-js
 install:
-  - git clone --branch=master https://github.com/alu0101111254/p2-t1-pl-travis.git alu0101111254/p2-t1-pl-travis
   - gem install rake
   - rake
