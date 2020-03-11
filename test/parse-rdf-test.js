@@ -10,7 +10,7 @@
 
 const fs = require('fs');
 const expect = require('chai').expect;
-const parseRDF = require('../lib/parse-rdf.js');
+const parseRDF = require('../databases/lib/parse-rdf.js');
 
 const rdf = fs.readFileSync(`${__dirname}/pg132.rdf`);
 
@@ -36,5 +36,18 @@ describe('parseRDF', () => {
       .that.is.an('array').with.lengthOf(2)
       .and.contains('Military art and science -- Early works to 1800')
       .and.contains('War -- Early works to 1800');
+  });
+   /* Add a new assertion to parse-rdf-test.js that checks for book.lcc. 
+ It should be of type string and it should be at least one character long.
+  It should start with an uppercase letter of the English alphabet, but not I, O, W, X, or Y. */
+  it('should check for book.lcc', () =>{
+    const book = parseRDF(rdf);
+
+    expect(book).to.have.a.property('lcc').that.is.an('string');
+    //console.log(book.lcc.charAt(0));
+  
+    expect(book.lcc.charAt(0)).to.equal(book.lcc.charAt(0).toUpperCase())
+    .and.not.contains('I').and.not.contains('O').and.not.contains('W')
+    .and.not.contains('X').and.not.contains('Y');
   });
 });

@@ -9,7 +9,7 @@
 'use strict';
 const assert = require('assert');
 const EventEmitter = require('events').EventEmitter;
-const LDJClient = require('../lib/ldj-client.js');
+const LDJClient = require('../databases/lib/ldj-client.js');
 
 describe('LDJClient', () => {
   let stream = null;
