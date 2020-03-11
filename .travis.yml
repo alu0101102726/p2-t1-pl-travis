@@ -1,0 +1,8 @@
+deploy:
+  provider: npm
+  email: alu0101111254
+  api_key:
+    secure: jgF9nh+6025FUl9j28turWSd3GvWOjITfF8QtQtzNSf40ITeBwuqhcKNSmJcsit+S+AUEF4ec5EfcqvnVaR4cr5dzptl8UXlbMrVpF3jmVYEO2YBtan/AYEvGEN2AOX8oDWfAccQCUaFrq0hm0sjI/P/LGO94M6IznAk+ZEAYd47q2w2jPxwImC/6590DFxi4xNMGatPdtODhmefJbPotxROjkqGzwgUxl+jlAXsJkgm2G/S4R5bvwl9aEzDSVBbh2/v5b27N8jSnRJobejbQv4RiFADcwaBQ/ujdbAMVJVeCqn9A3ZTV/y4PRW2ls6uAGOZS5jbW+hOqis+x1Nt4i0Gu55jQ5rXQ1Jvd/K5M+jxK8yC9JGZprcA3wL+T9++isJcLZrQ9wS+NqoYWFCgT36MS7xediPzyR6Ks0qXS06ZW5JAgvDY/DVOCLm5dROdeZpz5KrWfMbRsOXo4KQFIAOA/d7/uoTruBIytJhVfgjCZ57A2axv5fbu8Ol0WQIf0kyuYwHQGbNvukfYOT76dK8iyoIxTksVgXVKJR/Mh1kJnRVxO8kNUmZIUy9NOdO46Juet/ticrGqj6iOEaa6MorW5cx3nXcwkHoPP7PA23g7w4Ug42lwuyaAf72Zt6s1l5BkkLtb5UsulA74l31jM6i5RkXCoKFX8l8npEk/XOw=
+  on:
+    tags: true
+    repo: ULL-ESIT-PL-1920/p2-t1-testing-alu0101111254

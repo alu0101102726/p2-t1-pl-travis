@@ -1,0 +1,7 @@
+desc "Hacer las pruebas unitarias"
+  task :default do
+    sh  "gem install bundler"
+    sh  "bundler install" 
+    sh  "npm install"
+    sh  "npm test"
+  end
