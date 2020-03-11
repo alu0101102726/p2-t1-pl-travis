@@ -8,11 +8,11 @@
 ***/
 'use strict';
 
-const fs = require('fs');
-const expect = require('chai').expect;
-const parseRDF = require('../databases/lib/parse-rdf.js');
+let fs = require('fs');
+let expect = require('chai').expect;
+let parseRDF = require('../databases/lib/parse-rdf.js');
 
-const rdf = fs.readFileSync(`${__dirname}/pg132.rdf`);
+let rdf = fs.readFileSync(`${__dirname}/pg132.rdf`);
 
 describe('parseRDF', () => {
   it('should be a function', () => {
@@ -20,7 +20,7 @@ describe('parseRDF', () => {
   });
 
   it('should parse RDF content', () => {
-    const book = parseRDF(rdf);
+    let book = parseRDF(rdf);
     
 
     expect(book).to.be.an('object');
@@ -41,7 +41,7 @@ describe('parseRDF', () => {
  It should be of type string and it should be at least one character long.
   It should start with an uppercase letter of the English alphabet, but not I, O, W, X, or Y. */
   it('should check for book.lcc', () =>{
-    const book = parseRDF(rdf);
+    let book = parseRDF(rdf);
 
     expect(book).to.have.a.property('lcc').that.is.an('string');
     //console.log(book.lcc.charAt(0));

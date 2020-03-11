@@ -7,12 +7,12 @@
  * Visit http://www.pragmaticprogrammer.com/titles/jwnode2 for more book information.
 ***/
 'use strict';
-const cheerio = require('cheerio');
+let cheerio = require('cheerio');
 
 module.exports = rdf => {
-  const $ = cheerio.load(rdf);
+  let $ = cheerio.load(rdf);
 
-  const book = {};
+  let book = {};
 
   book.id = +$('pgterms\\:ebook').attr('rdf:about').replace('ebooks/', '');
 

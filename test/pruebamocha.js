@@ -7,9 +7,9 @@
  * Visit http://www.pragmaticprogrammer.com/titles/jwnode2 for more book information.
 ***/
 'use strict';
-const assert = require('assert');
-const EventEmitter = require('events').EventEmitter;
-const LDJClient = require('../databases/lib/ldj-client.js');
+let assert = require('assert');
+let EventEmitter = require('events').EventEmitter;
+let LDJClient = require('../databases/lib/ldj-client.js');
 
 describe('LDJClient', () => {
   let stream = null;

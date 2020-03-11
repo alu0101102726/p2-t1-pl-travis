@@ -7,16 +7,16 @@
  * Visit http://www.pragmaticprogrammer.com/titles/jwnode2 for more book information.
 ***/
 'use strict';
-const EventEmitter = require('events').EventEmitter;
+let EventEmitter = require('events').EventEmitter;
 class LDJClient extends EventEmitter {
-  constructor(stream) {
+  letructor(stream) {
     super();
     let buffer = '';
     stream.on('data', data => {
       buffer += data;
       let boundary = buffer.indexOf('\n');
       while (boundary !== -1) {
-        const input = buffer.substring(0, boundary);
+        let input = buffer.substring(0, boundary);
         buffer = buffer.substring(boundary + 1);
         this.emit('message', JSON.parse(input));
         boundary = buffer.indexOf('\n');

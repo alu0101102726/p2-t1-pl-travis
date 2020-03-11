@@ -7,8 +7,8 @@
  * We make no guarantees that this code is fit for any purpose.
  * Visit http://www.pragmaticprogrammer.com/titles/jwnode2 for more book information.
 ***/
-const fs = require('fs');
-const parseRDF = require('./lib/parse-rdf.js');
-const rdf = fs.readFileSync(process.argv[2]);
-const book = parseRDF(rdf);
+let fs = require('fs');
+let parseRDF = require('./lib/parse-rdf.js');
+let rdf = fs.readFileSync(process.argv[2]);
+let book = parseRDF(rdf);
 console.log(JSON.stringify(book, null, '  '));
