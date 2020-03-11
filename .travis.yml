@@ -1,4 +1,8 @@
 languaje: node-js
 install:
+  - npm cache clean -f
+  - npm install -g n
+  - n stable
+  - node --version
   - gem install rake
   - rake
