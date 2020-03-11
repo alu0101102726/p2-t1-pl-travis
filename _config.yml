@@ -21,8 +21,8 @@
 title: P2-T1 PL TESTING
 email: alu01011111254@ull.edu.es
 description: "Informe sobre la práctica sobre unit testing, y ficheros xml y json."
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/p2-t1-testing-alu0101111254" # the subpath of your site, e.g. /blog
+url: "https://ull-esit-pl-1920.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: LucasBodLob
 github_username:  alu0101111254
 exclude: 

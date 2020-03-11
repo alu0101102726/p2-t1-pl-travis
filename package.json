@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d ./_site",
+    "deploy": "gh-pages -d _site",
     "build": "bundle exec jekyll build -b \"p2-t1-testing-alu0101111254\"",
     "test": "mocha",
     "test:watch": "mocha --watch --reporter min",
