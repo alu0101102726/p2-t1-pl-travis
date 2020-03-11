@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages -d ./_site",
+    "build": "bundle exec jekyll build -b \"p2-t1-testing-alu0101111254\"",
     "test": "mocha",
     "test:watch": "mocha --watch --reporter min",
     "test:debug": "node --inspect node_modules/mocha/bin/_mocha --watch --no-timeouts"
@@ -25,6 +27,7 @@
   },
   "dependencies": {
     "cheerio": "0.22.0",
+    "gh-pages": "^2.2.0",
     "gulp": "^4.0.2",
     "gulp-shell": "^0.8.0",
     "node-dir": "0.1.16"
